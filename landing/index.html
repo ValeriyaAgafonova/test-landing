@@ -3,25 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Nootris</title>
   </head>
   <body>
     <header class="header">
-      <img class="header__logo" alt="logo" />
+        <div class="header__burger">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </div>
+      <img class="header__logo" src="./assets/images/svg/logo.svg" alt="logo" />
       <ul class="header__menu">
         <li class="header__menu-item">FAQ</li>
         <li class="header__menu-item">Оплата и доставка</li>
         <li class="header__menu-item">Возврат</li>
         <li class="header__menu-item">Исследования</li>
         <li class="header__menu-item">Личный кабинет</li>
+        <li class="header__menu-item"> <a class="header__telephone" href="tel:88006000990">8 (800) 600-09-90</a></li>
       </ul>
-      <a class="header__telephone">8 8 (800) 600-09-90</a>
-      <img class="header__basket" alt="basket icon" />
+      <div class="header__basket-container">
+      <img class="header__basket" src="./assets/images/svg/basket.svg" alt="basket icon" />
+      <div class="header__amount-icon">1</div>
+    </div>
     </header>
     <main class="main">
       <section class="cover">
-        <h1 class="cover__main-title">Активируй иммунитет</h1>
+          <img class="cover__image" src="./assets/images/png/group-cut.png" alt="image">
+          <div class="cover__content">
+        <h1 class="cover__main-title">Активируй иммунитет!</h1>
         <p class="cover__main-subtitle">
           Всего пять секунд в день помогут укрепить иммунитет и повысить
           защитные силы организма
@@ -30,10 +42,11 @@
         <p class="cover__subtitle">
           Вашему организму во время пандемии и сезонных простуд
         </p>
+    </div>
       </section>
       <section class="discount">
         <h2 class="discount__title">
-          ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА СО СКИДКОЙ -15% ПЕРВЫМ!
+          ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА <br><span class="discount__title-second-line">СО СКИДКОЙ -15% ПЕРВЫМ!</span>
         </h2>
         <div class="discount__price-wrapper">
           <p class="discount__full-price">750₽</p>
@@ -41,23 +54,24 @@
         </div>
         <div class="discount__ingredients">
           <div class="discount__ingredients-item">
-            <img class="discount__ingredient-photo" alt="ginger" />
+            <img class="discount__ingredient-photo" src="./assets/images/png/ginger.png" alt="ginger" />
             <p class="discount__ingredient-first-line">Содержит</p>
             <p class="discount__ingredient-second-line">Имбирь</p>
           </div>
-          <div class="discount__ingredient-item">
-            <img class="discount__ingredient-photo" alt="nootris" />
+          <div class="discount__ingredients-item">
+            <img class="discount__ingredient-photo" src="./assets/images/png/nootris.png" alt="nootris" />
             <p class="discount__ingredient-first-line">+ Бесплатная доставка</p>
             <p class="discount__ingredient-second-line">Специальная цена</p>
           </div>
-          <div class="discount__ingredient-item">
-            <img class="discount__ingredient-photo" alt="vorus" />
-            <p class="discount__ingredients-first-line">Нейтрализует</p>
-            <p class="discount__ingredients-second-line">вирусы</p>
+          <div class="discount__ingredients-item">
+            <img class="discount__ingredient-photo" src="./assets/images/png/vorus.png" alt="vorus" />
+            <p class="discount__ingredient-first-line">Нейтрализует</p>
+            <p class="discount__ingredient-second-line">вирусы</p>
           </div>
         </div>
-        <button class="discount__order-button">Оформить заказ</button>
+        <button class="discount__order-button">Оформить заказ!</button>
       </section>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>
